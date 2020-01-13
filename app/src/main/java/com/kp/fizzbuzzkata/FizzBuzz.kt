@@ -1,23 +1,23 @@
 package com.kp.fizzbuzzkata
 
-class FizzBuzz {
-    val FIZZ = "Fizz"
-    val BUZZ = "Buzz"
-    val FIZZBUZZ = "FizzBuzz"
+import com.kp.fizzbuzzkata.FizzBuzzConstant.Companion.BUZZ
+import com.kp.fizzbuzzkata.FizzBuzzConstant.Companion.FIVE
+import com.kp.fizzbuzzkata.FizzBuzzConstant.Companion.FIZZ
+import com.kp.fizzbuzzkata.FizzBuzzConstant.Companion.FIZZBUZZ
 
-    fun convert(convertTOFizzBuss: Int): String {
-        if(convertTOFizzBuss % FizzBuzzType.FIFTEEN.value == FizzBuzzType.ZERO.value)
+class FizzBuzz {
+
+    fun convert(convertToFizzBuzz: Int): String {
+        if(convertToFizzBuzz % FizzBuzzType.FIFTEEN.value == FizzBuzzType.ZERO.value)
             return FIZZBUZZ
-        if (convertTOFizzBuss % FizzBuzzType.FIVE.value == FizzBuzzType.ZERO.value ||
-             convertTOFizzBuss.toString().contains("5"))
+        if (convertToFizzBuzz % FizzBuzzType.FIVE.value == FizzBuzzType.ZERO.value ||
+            has5InIt(convertToFizzBuzz))
             return BUZZ
-        if (convertTOFizzBuss % FizzBuzzType.THREE.value == FizzBuzzType.ZERO.value)
+        if (convertToFizzBuzz % FizzBuzzType.THREE.value == FizzBuzzType.ZERO.value)
             return FIZZ
 
-        return convertTOFizzBuss.toString()
+        return convertToFizzBuzz.toString()
     }
-}
 
-enum class FizzBuzzType(val value: Int){
-    ZERO(0), THREE(3), FIVE(5), FIFTEEN(15)
+    private fun has5InIt(convertToFizzBuzz: Int) = convertToFizzBuzz.toString().contains(FIVE)
 }
