@@ -4,6 +4,7 @@ import com.kp.fizzbuzzkata.FizzBuzzConstant.Companion.BUZZ
 import com.kp.fizzbuzzkata.FizzBuzzConstant.Companion.FIVE
 import com.kp.fizzbuzzkata.FizzBuzzConstant.Companion.FIZZ
 import com.kp.fizzbuzzkata.FizzBuzzConstant.Companion.FIZZBUZZ
+import com.kp.fizzbuzzkata.FizzBuzzConstant.Companion.THREE
 
 class FizzBuzz {
 
@@ -21,6 +22,6 @@ class FizzBuzz {
     }
 
     private fun has5InIt(convertToFizzBuzz: Int) = convertToFizzBuzz.toString().contains(FIVE)
-    private fun has3InIt(convertToFizzBuzz: Int) = convertToFizzBuzz.toString().contains("3")
+    private fun has3InIt(convertToFizzBuzz: Int) = convertToFizzBuzz.toString().contains(THREE)
 
 }

@@ -6,6 +6,7 @@ class FizzBuzzConstant {
         const val BUZZ = "Buzz"
         const val FIZZBUZZ = "FizzBuzz"
         const val FIVE = "5"
+        const val THREE = "5"
 
     }
 }
