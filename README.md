@@ -53,6 +53,8 @@ Stage 2 - new requirements
  * A number is fizz if it is divisible by 3 or if it has a 3 in it
  * A number is buzz if it is divisible by 5 or if it has a 5 in it
  
+- Assumption or Acceptance: According to Stage 2 requirement, When it is 53 or 35, Buzz should be returned though 53 has 5 in it or 35 is divisible by 5.
+
  
 # Prerequisites
 - 4 GB RAM minimum, 8 GB RAM recommended
@@ -79,4 +81,13 @@ Step-2: From the options choose "Git", then provide the following url "https://g
 
 Step-3: Once the checkout completes it should open up the project
 
-Step - 4: Click "Run App" from the toolbar to run the application on the Physical device or Emulator
+Step - 4: Click "Run App" from the toolbar to run the application on the Physical device or Emulator.
+
+step - 5: Open logcat in Android Studio, and see fizz buzz statements printed after execution.
+
+# Run Test Cases
+Step-1: Click on "Run" option in toolbar and edit the run configure to point testcases within the application
+
+Step-2: Please find the file "FizzBuzzTest" and "FizzTestParameterizedTest" under the following path "app/src/test/java/com.kp.fizzbuzzkata"
+
+Step-3: You can choose to test all the cases by running the whole file or choose any particular test cases by opening it
