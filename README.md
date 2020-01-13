@@ -55,22 +55,22 @@ Stage 2 - new requirements
  
  
 # Prerequisites
-4 GB RAM minimum, 8 GB RAM recommended
+- 4 GB RAM minimum, 8 GB RAM recommended
 
-2 GB of available disk space minimum, 4 GB Recommended (500 MB for IDE + 1.5 GB for Android SDK and emulator system image)
+- 2 GB of available disk space minimum, 4 GB Recommended (500 MB for IDE + 1.5 GB for Android SDK and emulator system image)
 1280 x 800 minimum screen resolution
 
-Mac OS X 10.10 or higher
+- Mac OS X 10.10 or higher
 
-Microsoft Windows 7/8/10 (32- or 64-bit). The Android Emulator supports 64-bit Windows only
+- Microsoft Windows 7/8/10 (32- or 64-bit). The Android Emulator supports 64-bit Windows only
 
-Android Studio
+- Android Studio
 
-Android SDK
+- Android SDK
 
-GIT Bash
+- GIT Bash
 
-Android Emulator / Physical Device to test
+- Android Emulator / Physical Device to test
 
 # Run Application
 Step-1: Open "Android studio" then choose "Check out project from Version control"
