@@ -30,7 +30,7 @@ class FizzBuzzTest {
 
     @Test
     fun `Given convert function should not return Buzz when any value which is not divisible by 5`(){
-        val expectedResult = "Buzz"
+        val expectedResult = fizzBuzz.BUZZ
         //Act
         val actualResult = fizzBuzz.convert(3)
         //Assert
