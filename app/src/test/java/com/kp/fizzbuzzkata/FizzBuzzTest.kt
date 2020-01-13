@@ -54,4 +54,13 @@ class FizzBuzzTest {
         //Assert
         assertNotEquals(expectedResult, actualResult)
     }
+
+    @Test
+    fun `Given convert function should return FizzBuzz when any value which is divisible by 15`(){
+        val expectedResult = fizzBuzz.FIZZBUZZ
+        //Act
+        val actualResult = fizzBuzz.convert(15)
+        //Assert
+        assertEquals(expectedResult, actualResult)
+    }
 }
