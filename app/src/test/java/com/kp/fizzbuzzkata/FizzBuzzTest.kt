@@ -10,7 +10,7 @@ class FizzBuzzTest {
     private val fizzBuzz = FizzBuzz()
 
     @Test
-    fun `Given test function should not return Fizz when 1 is passed to the function`(){
+    fun `Given convert function should not return Fizz when any value passed which is not divisible by 3`(){
         val expectedResult = fizzBuzz.FIZZ
         //Act
         val actualResult = fizzBuzz.convert(1)
