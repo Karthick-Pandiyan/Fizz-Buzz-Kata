@@ -4,6 +4,8 @@ class FizzBuzz {
     val FIZZ = "Fizz"
 
     fun convert(convertTOFizzBuss: Int): String {
+        if (convertTOFizzBuss % 5 == 0)
+            return "Buzz"
         if (convertTOFizzBuss % FizzBuzzType.THREE.value == FizzBuzzType.ZERO.value)
             return FIZZ
 

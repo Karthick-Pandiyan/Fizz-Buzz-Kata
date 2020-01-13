@@ -27,4 +27,13 @@ class FizzBuzzTest {
         //Assert
         assertEquals(expectedResult, actualResult)
     }
+
+    @Test
+    fun `Given convert function should not return Buzz when any value which is not divisible by 5`(){
+        val expectedResult = "Buzz"
+        //Act
+        val actualResult = fizzBuzz.convert(3)
+        //Assert
+        assertNotEquals(expectedResult, actualResult)
+    }
 }
