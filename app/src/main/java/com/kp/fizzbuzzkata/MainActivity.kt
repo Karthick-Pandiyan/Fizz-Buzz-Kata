@@ -14,5 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val fizzBuzz = FizzBuzz()
+        for (i in 1..100){
+            System.out.println("$i = ${fizzBuzz.convert(i)}")
+        }
     }
 }
