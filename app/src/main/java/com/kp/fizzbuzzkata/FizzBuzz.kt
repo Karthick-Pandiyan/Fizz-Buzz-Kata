@@ -8,7 +8,8 @@ class FizzBuzz {
     fun convert(convertTOFizzBuss: Int): String {
         if(convertTOFizzBuss % FizzBuzzType.FIFTEEN.value == FizzBuzzType.ZERO.value)
             return FIZZBUZZ
-        if (convertTOFizzBuss % FizzBuzzType.FIVE.value == FizzBuzzType.ZERO.value)
+        if (convertTOFizzBuss % FizzBuzzType.FIVE.value == FizzBuzzType.ZERO.value ||
+             convertTOFizzBuss.toString().contains("5"))
             return BUZZ
         if (convertTOFizzBuss % FizzBuzzType.THREE.value == FizzBuzzType.ZERO.value)
             return FIZZ
