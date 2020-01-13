@@ -72,4 +72,13 @@ class FizzBuzzTest {
         //Assert
         assertEquals(expectedResult, actualResult)
     }
+
+    @Test
+    fun `Given convert function should return Fizz when any value which is divisible 3 or any value which has 3 in it`(){
+        val expectedResult = FizzBuzzConstant.FIZZ
+        //Act
+        val actualResult = fizzBuzz.convert(31)
+        //Assert
+        assertEquals(expectedResult, actualResult)
+    }
 }

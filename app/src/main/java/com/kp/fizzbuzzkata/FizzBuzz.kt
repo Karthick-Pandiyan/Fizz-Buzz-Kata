@@ -13,11 +13,14 @@ class FizzBuzz {
         if (convertToFizzBuzz % FizzBuzzType.FIVE.value == FizzBuzzType.ZERO.value ||
             has5InIt(convertToFizzBuzz))
             return BUZZ
-        if (convertToFizzBuzz % FizzBuzzType.THREE.value == FizzBuzzType.ZERO.value)
+        if (convertToFizzBuzz % FizzBuzzType.THREE.value == FizzBuzzType.ZERO.value ||
+            has3InIt(convertToFizzBuzz))
             return FIZZ
 
         return convertToFizzBuzz.toString()
     }
 
     private fun has5InIt(convertToFizzBuzz: Int) = convertToFizzBuzz.toString().contains(FIVE)
+    private fun has3InIt(convertToFizzBuzz: Int) = convertToFizzBuzz.toString().contains("3")
+
 }
