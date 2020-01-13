@@ -11,7 +11,7 @@ class FizzBuzzTest {
 
     @Test
     fun `Given test function should not return Fizz when 1 is passed to the function`(){
-        val expectedResult = "Fizz"
+        val expectedResult = fizzBuzz.FIZZ
         //Act
         val actualResult = fizzBuzz.convert(1)
         //Assert
