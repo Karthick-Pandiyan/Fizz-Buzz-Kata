@@ -34,7 +34,7 @@ class FizzTestParameterizedTest(private val inputValue: Int, private val expecte
     }
 
     @Test
-    fun shouldReturnExpectedRomanForArabic() {
+    fun `Check acceptance criteria with passing multiple test`() {
         assertThat(fizz.convert(inputValue), equalTo(expectedValue));
     }
 }
